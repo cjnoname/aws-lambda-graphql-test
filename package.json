@@ -1,0 +1,91 @@
+{
+  "_from": "aws-lambda-graphql@1.0.0-alpha.22",
+  "_id": "aws-lambda-graphql@1.0.0-alpha.22",
+  "_inBundle": false,
+  "_integrity": "sha512-fBP22q4kMYHX9/XYlNUIJK4eKNfjdyMGSTIEEWbQIejI3TUKB6WnANrC344U03v75kCBptmfYHL4ZRBmhtf9Kw==",
+  "_location": "/aws-lambda-graphql",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "aws-lambda-graphql@1.0.0-alpha.22",
+    "name": "aws-lambda-graphql",
+    "escapedName": "aws-lambda-graphql",
+    "rawSpec": "1.0.0-alpha.22",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0-alpha.22"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/aws-lambda-graphql/-/aws-lambda-graphql-1.0.0-alpha.22.tgz",
+  "_shasum": "2f864cb818c3076c2e904be5db1b1488c5eb7c1e",
+  "_spec": "aws-lambda-graphql@1.0.0-alpha.22",
+  "_where": "C:\\Projects\\internal\\apra-amcos-internal-websocket",
+  "bugs": {
+    "url": "https://github.com/michalkvasnicak/aws-lambda-graphql/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.36",
+    "@types/ioredis": "^4.16.6",
+    "apollo-server-core": "^2.9.14",
+    "apollo-server-lambda": "^2.9.14",
+    "iterall": "^1.2.2",
+    "ulid": "^2.3.0"
+  },
+  "deprecated": false,
+  "description": "Apollo server for AWS Lambda with WebSocket subscriptions support over API Gateway v1 + v2",
+  "devDependencies": {
+    "apollo-link": "^1.2.11",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.6",
+    "mock-socket": "^8.0.5",
+    "subscriptions-transport-ws": "^0.9.16",
+    "wait-for-expect": "1.1.0"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "gitHead": "ec554ad12e88261d967162a877e052e2647b4839",
+  "homepage": "https://github.com/michalkvasnicak/aws-lambda-graphql#readme",
+  "keywords": [
+    "apollo",
+    "aws",
+    "lambda",
+    "apollo",
+    "graphql",
+    "subscriptions",
+    "apigateway",
+    "websocket",
+    "http",
+    "graphql-subscriptions",
+    "serverless"
+  ],
+  "main": "dist/index.js",
+  "name": "aws-lambda-graphql",
+  "peerDependencies": {
+    "aws-sdk": "^2.387.0",
+    "graphql": "^14.x || ^15.x",
+    "graphql-subscriptions": "^1.0.0",
+    "ioredis": "^4.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalkvasnicak/aws-lambda-graphql.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "prebuild": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+    "prepublishOnly": "rimraf dist && rimraf tsconfig.tsbuildinfo && tsc -p ."
+  },
+  "sideEffects": false,
+  "typings": "dist/index.d.ts",
+  "version": "1.0.0-alpha.22"
+}
